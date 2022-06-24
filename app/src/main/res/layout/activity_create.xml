@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:orientation="vertical"
+    tools:context=".CreateActivity">
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_gravity="center|bottom"
+        android:layout_marginBottom="20dp"
+        android:visibility="gone" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="สมัครสมาชิก"
+                android:textColor="#FFFFFF"
+                android:textSize="30sp" />
+
+            <EditText
+                android:id="@+id/txt_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/name"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:paddingLeft="15dp"
+                android:paddingTop="30dp"
+                android:textColor="#000000" />
+
+            <EditText
+                android:id="@+id/txt_email"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/email"
+                android:ems="10"
+                android:inputType="textEmailAddress"
+                android:paddingLeft="15dp"
+                android:paddingTop="30dp"
+                android:textColor="#000000" />
+
+            <EditText
+                android:id="@+id/txt_password"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/passw"
+                android:ems="10"
+                android:inputType="textPassword"
+                android:paddingLeft="15dp"
+                android:paddingTop="30dp"
+                android:textColor="#000000" />
+
+            <EditText
+                android:id="@+id/txt_cfpassword"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/cfpassw"
+                android:ems="10"
+                android:inputType="textPassword"
+                android:paddingLeft="15dp"
+                android:paddingTop="30dp"
+                android:textColor="#000000" />
+
+            <EditText
+                android:id="@+id/txt_phone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/tel"
+                android:ems="10"
+                android:inputType="phone"
+                android:paddingLeft="15dp"
+                android:paddingTop="30dp"
+                android:textColor="#000000" />
+
+            <CheckBox
+                android:id="@+id/checkBox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="อนุญาตให้เข้าถึงข้อมูล"
+                android:textColor="#FFFFFF"
+                android:textSize="16sp" />
+
+            <CheckBox
+                android:id="@+id/checkBox2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ยอมรับข้อตกลงและเงื่อนไข"
+                android:textColor="#FFFFFF"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/buttoncreateacc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/buttoncreate" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
